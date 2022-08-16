@@ -7,7 +7,7 @@ import java.util.List;
 
 public interface LivroRepository {
 
-    void cadastrarLivro(Livro livro) throws SQLException;
+    void cadastrarLivro(Livro livro);
     List<Livro> listarLivros();
     Livro editarLivro(Livro livro);
     Livro buscarLivroPorTitulo(String titulo);
