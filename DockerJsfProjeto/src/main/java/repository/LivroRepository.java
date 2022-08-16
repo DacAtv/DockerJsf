@@ -2,13 +2,14 @@ package repository;
 
 import dominio.Livro;
 
+import java.sql.SQLException;
 import java.util.List;
 
 public interface LivroRepository {
 
+    void cadastrarLivro(Livro livro) throws SQLException;
     List<Livro> listarLivros();
-    void cadastrar(Livro livro);
     Livro editarLivro(Livro livro);
     Livro buscarLivroPorTitulo(String titulo);
-    void excluir(Long id);
+    void excluirLivro(Long id);
 }
