@@ -3,38 +3,30 @@ package Dominio;
 import java.time.LocalDate;
 
 public class Livro {
-    private int id;
+    private long id;
     private String titulo;
     private LocalDate dataDeLancamento;
 
-    public Livro(int id, String titulo, LocalDate dataDeLancamento) {
+    public Livro(String titulo,LocalDate dataDeLancamento) {
+        this(0,titulo,dataDeLancamento);
+    }
+
+    public Livro(long id,String titulo,LocalDate dataDeLancamento) {
         this.id = id;
         this.titulo = titulo;
         this.dataDeLancamento = dataDeLancamento;
     }
-
-    public int getId() {
-        return id;
+    public String titulo(){
+        return this.titulo;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    @Override
+    public String toString() {
+        return "Livro{" + "id=" + id + ", titulo=" + titulo + ", dataDeLancamento=" + dataDeLancamento + '}';
     }
 
-    public String getTitulo() {
-        return titulo;
-    }
-
-    public void setTitulo(String titulo) {
-        this.titulo = titulo;
-    }
-
-    public LocalDate getDataDeLancamento() {
-        return dataDeLancamento;
-    }
-
-    public void setDataDeLancamento(LocalDate dataDeLancamento) {
-        this.dataDeLancamento = dataDeLancamento;
+    public LocalDate dataLancamento() {
+        return this.dataDeLancamento;
     }
 
 }
