@@ -1,23 +1,23 @@
-package Dominio;
+package dominio;
 
 import java.time.LocalDate;
 
 public class Livro {
-    private int id;
+    private Long id;
     private String titulo;
     private LocalDate dataDeLancamento;
 
-    public Livro(int id, String titulo, LocalDate dataDeLancamento) {
+    public Livro(Long id, String titulo, LocalDate dataDeLancamento) {
         this.id = id;
         this.titulo = titulo;
         this.dataDeLancamento = dataDeLancamento;
     }
 
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
