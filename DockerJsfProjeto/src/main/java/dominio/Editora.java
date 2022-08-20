@@ -1,21 +1,21 @@
 package dominio;
 
 public class Editora {
-    private Long codigo;
+    private int codigo;
     private String localDeOrigem;
     private String nomeFantasia;
 
-    public Editora(Long codigo, String localDeOrigem, String nomeFantasia) {
+    public Editora(int codigo, String localDeOrigem, String nomeFantasia) {
         this.codigo = codigo;
         this.localDeOrigem = localDeOrigem;
         this.nomeFantasia = nomeFantasia;
     }
 
-    public Long getCodigo() {
+    public int getCodigo() {
         return codigo;
     }
 
-    public void setCodigo(Long codigo) {
+    public void setCodigo(int codigo) {
         this.codigo = codigo;
     }
 

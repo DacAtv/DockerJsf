@@ -20,7 +20,7 @@ public class LivroJDBC implements LivroRepository {
             Class.forName("org.postgresql.Driver");
             this.connection = DriverManager.getConnection(
                     "jdbc:postgresql://host-banco:5432/livros",
-                    "job","123"
+                    "postgres","postgres"
             );
         } catch (ClassNotFoundException | SQLException ex) {
             Logger.getLogger(LivroJDBC.class.getName()).log(Level.SEVERE,null,ex);
